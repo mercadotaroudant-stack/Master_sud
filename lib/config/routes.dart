@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../screens/splash/splash_flow.dart';
 import '../screens/home/home_screen.dart';
 import '../screens/placeholder/placeholder_screen.dart';
 import '../screens/showrooms/showrooms_list_screen.dart';
@@ -15,7 +14,6 @@ import '../screens/pro_space/pro_space_screen.dart';
 class AppRoutes {
   AppRoutes._();
 
-  static const String splash = '/';
   static const String home = '/home';
   static const String produits = '/produits';
   static const String catalogue = '/catalogue';
@@ -28,7 +26,6 @@ class AppRoutes {
   static const String proSpace = '/espace-pro';
 
   static Map<String, WidgetBuilder> get routes => {
-        splash: (_) => const SplashFlow(),
         home: (_) => const HomeScreen(),
         produits: (_) => const PlaceholderScreen(titleKey: 'menu_produits'),
         catalogue: (_) => const CatalogueListScreen(),
