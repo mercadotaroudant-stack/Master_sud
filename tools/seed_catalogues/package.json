@@ -1,0 +1,13 @@
+{
+  "name": "seed_catalogues",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Seeds the 9 initial MASTER SUD catalogue records into Firestore (paintCatalogues collection).",
+  "main": "seed_catalogues.js",
+  "scripts": {
+    "seed": "node seed_catalogues.js"
+  },
+  "dependencies": {
+    "firebase-admin": "^12.6.0"
+  }
+}
